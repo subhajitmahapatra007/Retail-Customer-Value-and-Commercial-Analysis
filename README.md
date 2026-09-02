@@ -1,0 +1,1 @@
+An end-to-end data analytics project using Python, SQL, ETL, and Power BI to identify high-value customer segments, product opportunities, subscription gaps, and promotion patterns to support data-driven retail decisions.
