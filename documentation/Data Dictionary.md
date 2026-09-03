@@ -244,8 +244,7 @@ Therefore, the project can compare purchasing behavior across seasons but cannot
 | Analytical Role | Customer Experience Measure |
 | Description | Rating associated with the observed purchase/product experience. |
 | Expected Range | 1–5 |
-| Null Allowed | Yes in raw data |
-| Missing Records | 37 |
+| Null Allowed | NO |
 | Validation | Numeric and within 1–5 |
 | Business Use | Product/customer experience analysis |
 

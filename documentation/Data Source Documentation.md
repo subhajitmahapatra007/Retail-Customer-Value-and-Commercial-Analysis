@@ -13,10 +13,6 @@ The dataset contains customer-level shopping information across demographics, pr
 **Original Dataset Link:**  
 https://www.kaggle.com/datasets/saadaliyaseen/shopping-behaviour-dataset/data
 
-A GitHub-hosted copy of the dataset is also used during project development:
-
-https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI/blob/main/customer_shopping_behavior.csv
-
 ---
 
 ## 2. Dataset Purpose
@@ -141,6 +137,8 @@ Processed Dataset
    │
    ├── SQL Database
    │
+   ├── Python Notebook
+   │
    └── Power BI
 ```
 
@@ -151,22 +149,6 @@ The objective is to ensure that the analytical dataset can be reproduced from th
 ## 7. Data Quality Notes
 
 Initial profiling identifies several important data-quality considerations.
-
-### Missing Values
-
-`Review Rating` contains missing observations.
-
-These missing ratings should not be interpreted as zero ratings.
-
-The ETL process will handle these missing values using a documented imputation strategy while retaining an indicator showing which ratings were imputed.
-
-Example:
-
-```text
-rating_was_imputed = True / False
-```
-
-This preserves transparency during analysis.
 
 ### Duplicate Records
 
@@ -282,6 +264,7 @@ Python ETL Pipeline
 Clean Analytical Dataset
       │
       ├── SQL Analysis
+      ├── Python Analysis
       └── Power BI
 ```
 
@@ -298,7 +281,7 @@ The **raw dataset is the source of truth**.
 If the processed dataset is deleted, the complete analytical dataset should be reproducible by running the ETL pipeline against:
 
 ```text
-data/raw/customer_shopping_behavior.csv
+data/shopping_behavior_updated.csv
 ```
 
 This makes the project reproducible and demonstrates a production-oriented data workflow.
